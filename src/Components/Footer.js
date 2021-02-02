@@ -18,15 +18,6 @@ const Footer = ({ data }) => {
       <div className="row">
         <div className="twelve columns">
           <ul className="social-links">{networks}</ul>
-
-          <ul className="copyright">
-            <li>
-              Made by{" "}
-              <a title="PAPA" href="http://www.papareact.com/">
-                PAPA
-              </a>
-            </li>
-          </ul>
         </div>
         <div id="go-top">
           <a className="smoothscroll" title="Back to Top" href="#home">
