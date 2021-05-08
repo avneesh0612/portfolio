@@ -12,7 +12,7 @@ const Portfolio = ({ data }) => {
             data-aos-delay="200"
             data-aos-duration="900"
           >
-            <a href={projects.url} title={projects.title}>
+            <a href={projects.url} target="_blank" title={projects.title}>
               <img alt={projects.title} src={projectImage} />
               <div className="overlay">
                 <div className="portfolio-item-meta">

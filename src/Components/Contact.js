@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
+import emailjs from "emailjs-com";
 
 const Contact = ({ data }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-
   if (data) {
     var contactName = data.name;
     var street = data.address.street;
@@ -17,15 +13,28 @@ const Contact = ({ data }) => {
     var contactMessage = data.contactmessage;
   }
 
-  const submitForm = () => {
-    window.open(
-      `mailto:${contactEmail}?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(name)} (${encodeURIComponent(
-        email
-      )}): ${encodeURIComponent(message)}`
-    );
-  };
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_v16ajmi",
+
+        e.target,
+        "user_7ZQgzGca2oteS5RRColwT"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Thank you for contacting me. I will contact you back soon");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
 
   return (
     <section id="contact">
@@ -43,7 +52,7 @@ const Contact = ({ data }) => {
 
       <div className="row">
         <div className="eight columns">
-          <form onSubmit={submitForm}>
+          <form onSubmit={sendEmail}>
             <fieldset>
               <div>
                 <label htmlFor="contactName">
@@ -51,12 +60,8 @@ const Contact = ({ data }) => {
                 </label>
                 <input
                   type="text"
-                  defaultValue=""
-                  value={name}
-                  size="35"
-                  id="contactName"
-                  name="contactName"
-                  onChange={(e) => setName(e.target.value)}
+                  className="ring-2 ring-gray-200 p-2 m-2 rounded-md focus:outline-none focus:ring-blue-500"
+                  name="name"
                 />
               </div>
 
@@ -65,48 +70,29 @@ const Contact = ({ data }) => {
                   Email <span className="required">*</span>
                 </label>
                 <input
-                  type="text"
-                  defaultValue=""
-                  value={email}
-                  size="35"
-                  id="contactEmail"
-                  name="contactEmail"
-                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  className="ring-2 ring-gray-200 p-2 m-2 rounded-md focus:outline-none focus:ring-blue-500"
+                  name="email"
                 />
               </div>
 
               <div>
                 <label htmlFor="contactSubject">Subject</label>
-                <input
-                  type="text"
-                  defaultValue=""
-                  value={subject}
-                  size="35"
-                  id="contactSubject"
-                  name="contactSubject"
-                  onChange={(e) => setSubject(e.target.value)}
-                />
+                <input type="text" name="subject" />
               </div>
 
               <div>
                 <label htmlFor="contactMessage">
                   Message <span className="required">*</span>
                 </label>
-                <textarea
-                  cols="50"
-                  rows="15"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  id="contactMessage"
-                  name="contactMessage"
-                ></textarea>
+                <textarea cols="30" rows="8" name="message"></textarea>
               </div>
-
-              <div>
-                <button onClick={submitForm} type="submit" className="submit">
-                  Submit
-                </button>
-              </div>
+              <button
+                type="submit"
+                className="text-white bg-blue-500 m-2 w-60 h-12 rounded-lg mt-6 ml-auto"
+              >
+                Send Message
+              </button>
             </fieldset>
           </form>
 

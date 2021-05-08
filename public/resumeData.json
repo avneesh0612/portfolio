@@ -2,11 +2,11 @@
   "main": {
     "name": "Avneesh Agarwal",
     "occupation": "Learning ReactJs",
-    "description": "I am a tennis player and a developer",
+    "description": "I am a web developer",
     "image": "Avneesh Avatar.jpg",
     "bio": "Hi there! I am Avneesh! I am 13 years old. I've been coding for almost 1 year now. I have made many web apps using reactjs. My dream is to be a succesful software developer and influence people's life by making useful apps for them. ",
     "contactmessage": "Get in touch with me to know more about me!",
-    "email": "mamtajalan22@gmail.com",
+    "email": "avneeshagarwal0612@gmail.com",
     "phone": "+91 9163385254",
     "address": {
       "street": "Laketown",
@@ -16,9 +16,14 @@
     },
     "social": [
       {
-        "name": "facebook",
-        "url": "https://www.facebook.com/mamta.jalanagarwal",
-        "className": "fa fa-facebook"
+        "name": "instagram",
+        "url": "https://www.instagram.com/avneesh__agarwal/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/avneesh0612",
+        "className": "fa fa-github"
       },
       {
         "name": "linkedin",
@@ -26,14 +31,9 @@
         "className": "fa fa-linkedin"
       },
       {
-        "name": "instagram",
-        "url": "https://www.instagram.com/avneesh_agarwal/",
-        "className": "fa fa-instagram"
-      },
-      {
-        "name": "github",
-        "url": "https://github.com/avneesh0612",
-        "className": "fa fa-github"
+        "name": "twitter",
+        "url": "https://www.facebook.com/mamta.jalanagarwal",
+        "className": "fa fa-twitter"
       }
     ]
   },
@@ -73,39 +73,35 @@
     "projects": [
       {
         "title": "Todo App",
-        "category": "React JS",
-        "image": "Todo.png",
-        "url": "https://snapchat-clone-874b6.web.app/"
+        "category": "This is a todo app where you can add items, complete items and delete them. It uses local storage",
+        "image": "Todo-app.png",
+        "url": "https://avneeshtodo.netlify.app/"
       },
       {
-        "title": "LinkedIn Clone",
-        "category": "React JS and firebase",
-        "image": "linkedin.png",
-        "url": "https://linkedin-clone-20fba.web.app/"
-      },
-      {
-        "title": "Imessage Clone",
-        "category": "React JS and firebase",
-        "image": "imessage.jpg",
-        "url": "https://imessage-clone-86448.web.app/"
+        "title": "Whatsapp Clone",
+        "category": "This is a whatsapp clone built with Next.js and firebase and it has dark mode in it with 1:1 chat",
+        "image": "whatsapp-clone.png",
+        "url": "https://whatsapp-clone-nextjs-avneesh0612.vercel.app/"
       },
       {
         "title": "Weather app",
-        "category": "React JS",
+        "category": "This is a weather app built with openweather api and ReactJS",
         "image": "Weather.png",
         "url": "https://avneesh-weather-app.netlify.app/"
+      },
+      {
+        "title": "Netflix clone built with react, firebase, stripe and redux.",
+        "category": "This is a weather app built with openweather api and ReactJS",
+        "image": "Netflix.png",
+        "url": "https://netflix-clone-fc00d.web.app/"
       }
     ]
   },
   "testimonials": {
     "testimonials": [
       {
-        "text": "Avneesh is a great person, and my friend he made this signal clone app which was really it works cross platform and is mobile responisve.",
-        "user": "Frank"
-      },
-      {
-        "text": "Avneesh wants everything perfect and finished whenever he starts on something he makes sure that it is perfect and finishes the work within the time limit.",
-        "user": "Adam"
+        "text": "Avneesh is a great person and provided us with a beautiful website for our company.",
+        "user": "StackFusion"
       }
     ]
   }

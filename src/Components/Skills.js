@@ -16,7 +16,7 @@ function Skills() {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
     },
     Redux: {
-      text: "Redux is a Predictable State Container for JS Apps",
+      text: "Redux is a Predictable State Container for JS Apps. Which gives us a global state for our apps",
       image: "http://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png",
     },
     Firebase: {
@@ -27,7 +27,7 @@ function Skills() {
     },
     Tailwind: {
       text:
-        "Firebase is a Backend-as-a-Service — BaaS — that started as a YC11 startup and grew up into a next-generation app-development platform on Google Cloud Platform",
+        "Tailwind is a css framework for faster CSS. Which allows us to write css within the same file as HTML",
       image:
         "https://www.markusantonwolf.com/media/pages/blog/tailwind-css/265298487-1596675041/tailwind-css-logo.svg",
     },

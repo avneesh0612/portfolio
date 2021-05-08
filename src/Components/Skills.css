@@ -15,15 +15,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid black;
+  border: 2px dotted #5743db;
   padding: 30px;
   margin: 10px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=45, Color=#696969)"; /*IE 8*/
+  -moz-box-shadow: -8px 8px 5px -5px #b9b4b4 inset; /*FF 3.5+*/
+  -webkit-box-shadow: -8px 8px 5px -5px #b9b4b4 inset; /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: -8px 8px 5px -5px #b9b4b4 inset; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color=#696969); /*IE 5.5-7*/
 }
 
 .skill__infoBox--inactive {
-  border: 3px dotted gray;
+  border: 2px dotted #5743db;
   color: gray;
-  box-shadow: 1px 6px 9px 2px rgba(56, 56, 56, 0.26) inset;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=45, Color=#696969)"; /*IE 8*/
+  -moz-box-shadow: -8px 8px 5px -5px #b9b4b4 inset; /*FF 3.5+*/
+  -webkit-box-shadow: -8px 8px 5px -5px #b9b4b4 inset; /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: -8px 8px 5px -5px #b9b4b4 inset; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color=#696969); /*IE 5.5-7*/
   text-align: center;
 }
 
