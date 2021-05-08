@@ -67,7 +67,11 @@ const Header = ({ data }) => {
           <h1 className="responsive-headline">
             <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
           </h1>
-          <h3>
+          <h3
+            data-aos="zoom-in-up"
+            data-aos-delay="200"
+            data-aos-duration="900"
+          >
             Based in {city}. <span>{occupation}</span>. {description}.
           </h3>
           <hr />

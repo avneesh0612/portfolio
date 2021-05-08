@@ -1,8 +1,11 @@
 import React from "react";
+import Skills from "./Skills";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Resume = ({ data }) => {
+  AOS.init();
   if (data) {
-    var skillmessage = data.skillmessage;
     var education = data.education.map(function (education) {
       return (
         <div key={education.school}>
@@ -13,16 +16,6 @@ const Resume = ({ data }) => {
           </p>
           <p>{education.description}</p>
         </div>
-      );
-    });
-
-    var skills = data.skills.map(function (skills) {
-      var className = "bar-expand " + skills.name.toLowerCase();
-      return (
-        <li key={skills.name}>
-          <span style={{ width: skills.level }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
       );
     });
   }
@@ -36,15 +29,24 @@ const Resume = ({ data }) => {
           </h1>
         </div>
 
-        <div className="nine columns main-col">
+        <div
+          data-aos="fade-down-left"
+          data-aos-delay="200"
+          data-aos-duration="900"
+          className="nine columns main-col"
+        >
           <div className="row item">
             <div className="twelve columns">{education}</div>
           </div>
         </div>
       </div>
 
-
-      <div className="row skill">
+      <div
+        data-aos="fade-up-right"
+        data-aos-delay="200"
+        data-aos-duration="900"
+        className="row skill"
+      >
         <div className="three columns header-col">
           <h1>
             <span>Skills</span>
@@ -52,11 +54,7 @@ const Resume = ({ data }) => {
         </div>
 
         <div className="nine columns main-col">
-          <p>{skillmessage}</p>
-
-          <div className="bars">
-            <ul className="skills">{skills}</ul>
-          </div>
+          <Skills />
         </div>
       </div>
     </section>

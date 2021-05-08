@@ -1,9 +1,9 @@
 {
   "main": {
     "name": "Avneesh Agarwal",
-    "occupation": "Learning ReactJs and studying",
+    "occupation": "Learning ReactJs",
     "description": "I am a tennis player and a developer",
-    "image": "profilepicture.jpg",
+    "image": "Avneesh Avatar.jpg",
     "bio": "Hi there! I am Avneesh! I am 13 years old. I've been coding for almost 1 year now. I have made many web apps using reactjs. My dream is to be a succesful software developer and influence people's life by making useful apps for them. ",
     "contactmessage": "Get in touch with me to know more about me!",
     "email": "mamtajalan22@gmail.com",
@@ -61,39 +61,39 @@
       },
       {
         "name": "JavaScript",
-        "level": "80%"
+        "level": "70%"
       },
       {
         "name": "Web Development",
-        "level": "70%"
+        "level": "80%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Snapchat Clone",
-        "category": "React JS and firebase",
-        "image": "snapchat.png",
+        "title": "Todo App",
+        "category": "React JS",
+        "image": "Todo.png",
         "url": "https://snapchat-clone-874b6.web.app/"
       },
       {
-        "title": "LinkedIn Clone (React JS)",
+        "title": "LinkedIn Clone",
         "category": "React JS and firebase",
         "image": "linkedin.png",
         "url": "https://linkedin-clone-20fba.web.app/"
       },
       {
-        "title": "Imessage Clone (React JS)",
+        "title": "Imessage Clone",
         "category": "React JS and firebase",
         "image": "imessage.jpg",
         "url": "https://imessage-clone-86448.web.app/"
       },
       {
-        "title": "Signal Clone (React Native)",
-        "category": "",
-        "image": "signal-clone.png",
-        "url": "https://signal-clone-4eab1.web.app/"
+        "title": "Weather app",
+        "category": "React JS",
+        "image": "Weather.png",
+        "url": "https://avneesh-weather-app.netlify.app/"
       }
     ]
   },

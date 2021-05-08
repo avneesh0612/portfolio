@@ -6,7 +6,12 @@ const Portfolio = ({ data }) => {
       var projectImage = "images/portfolio/" + projects.image;
       return (
         <div key={projects.title} className="columns portfolio-item">
-          <div className="item-wrap">
+          <div
+            className="item-wrap"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="900"
+          >
             <a href={projects.url} title={projects.title}>
               <img alt={projects.title} src={projectImage} />
               <div className="overlay">
