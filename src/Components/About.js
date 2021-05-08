@@ -1,6 +1,10 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = ({ data }) => {
+  AOS.init();
+
   if (data) {
     var name = data.name;
     var profilepic = "images/" + data.image;
@@ -11,7 +15,6 @@ const About = ({ data }) => {
     var zip = data.address.zip;
     var phone = data.phone;
     var email = data.email;
-    var resumeDownload = data.resumedownload;
   }
 
   return (
@@ -19,9 +22,12 @@ const About = ({ data }) => {
       <div className="row">
         <div className="three columns">
           <img
+            data-aos="flip-right"
+            data-aos-delay="200"
+            data-aos-duration="900"
             className="profile-pic"
             src={profilepic}
-            alt="Sonny's Profile Pic"
+            alt="Avneesh's Profile Pic"
           />
         </div>
         <div className="nine columns main-col">
@@ -43,13 +49,6 @@ const About = ({ data }) => {
                 <span>{phone}</span>
                 <br />
                 <span>{email}</span>
-              </p>
-            </div>
-            <div className="columns download">
-              <p>
-                <a href={resumeDownload} className="button">
-                  <i className="fa fa-download"></i>Download Resume
-                </a>
               </p>
             </div>
           </div>
