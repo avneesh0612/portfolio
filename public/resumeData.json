@@ -3,7 +3,7 @@
     "name": "Avneesh Agarwal",
     "occupation": "Learning ReactJs",
     "description": "I am a web developer",
-    "image": "Avneesh Avatar.jpg",
+    "image": "https://avatars.githubusercontent.com/u/76690419?v=4",
     "bio": "Hi there! I am Avneesh! I am 13 years old. I've been coding for almost 1 year now. I have made many web apps using reactjs. My dream is to be a succesful software developer and influence people's life by making useful apps for them. ",
     "contactmessage": "Get in touch with me to know more about me!",
     "email": "avneeshagarwal0612@gmail.com",
@@ -32,7 +32,7 @@
       },
       {
         "name": "twitter",
-        "url": "https://www.facebook.com/mamta.jalanagarwal",
+        "url": "https://twitter.com/AvneeshAgarwa12",
         "className": "fa fa-twitter"
       }
     ]

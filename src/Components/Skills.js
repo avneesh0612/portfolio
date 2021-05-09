@@ -16,7 +16,8 @@ function Skills() {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
     },
     Redux: {
-      text: "Redux is a Predictable State Container for JS Apps. Which gives us a global state for our apps",
+      text:
+        "Redux is a Predictable State Container for JS Apps. Which gives us a global state for our apps",
       image: "http://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png",
     },
     Firebase: {
@@ -45,7 +46,11 @@ function Skills() {
 
   const draggableMarkup = (id) => (
     <Draggable id={id}>
-      <img className="skill__skillLogo" src={skillMap[id].image} alt="" />
+      <img
+        className="skill__skillLogo"
+        src={skillMap[id].image}
+        alt=""
+      />
     </Draggable>
   );
 

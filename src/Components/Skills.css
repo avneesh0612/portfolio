@@ -46,3 +46,15 @@
 .skill__skillLogo:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .skill__infoBox,
+  .skill__infoBox--inactive,
+  .skill__infoBox {
+    display: none;
+  }
+  .skill__skillLogo {
+    height: 75px;
+    margin: 15px;
+  }
+}
