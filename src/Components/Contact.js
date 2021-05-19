@@ -13,25 +13,23 @@ const Contact = ({ data }) => {
     var contactMessage = data.contactmessage;
   }
 
+  console.log(process.env.REACT_APP_USER_ID);
+
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "gmail",
-        "template_v16ajmi",
-
+        process.env.REACT_APP_GMAIL_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        "user_7ZQgzGca2oteS5RRColwT"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
-          console.log(result.text);
           alert("Thank you for contacting me. I will contact you back soon");
         },
-        (error) => {
-          console.log(error.text);
-        }
+        (error) => {}
       );
     e.target.reset();
   }
@@ -85,12 +83,14 @@ const Contact = ({ data }) => {
                 <label htmlFor="contactMessage">
                   Message <span className="required">*</span>
                 </label>
-                <textarea cols="30" rows="8" name="message"></textarea>
+                <textarea
+                  className="textarea"
+                  cols="30"
+                  rows="8"
+                  name="message"
+                ></textarea>
               </div>
-              <button
-                type="submit"
-                className="text-white bg-blue-500 m-2 w-60 h-12 rounded-lg mt-6 ml-auto"
-              >
+              <button type="submit" className="contact__button">
                 Send Message
               </button>
             </fieldset>

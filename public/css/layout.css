@@ -934,6 +934,10 @@ call-to-action .button {
   padding-top: 6px;
 }
 
+.textarea {
+  resize: vertical;
+}
+
 /* contact form */
 #contact form {
   margin-bottom: 30px;
@@ -977,6 +981,11 @@ call-to-action .button {
   border-radius: 3px;
   margin-left: 26%;
 }
+
+.contact__button {
+  margin-left: 160px;
+}
+
 #contact button.submit:hover {
   color: #0d0d0d;
   background: #fff;
