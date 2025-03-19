@@ -23,4 +23,5 @@ export const personalData = {
     "tech blogger",
     "Avneesh Agarwal",
   ],
+  blog: "https://blog.avneesh.tech",
 };
