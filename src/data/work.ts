@@ -37,6 +37,6 @@ export const work = [
     description:
       "Created technical content for Logrocket, Medusa, and Pointer. Worked on projects like Candypay, Tinydancer, and Cubik.",
     timeline: "Jan 2022 - Present",
-    url: "https://avneesh.tech",
+    url: "",
   },
 ];

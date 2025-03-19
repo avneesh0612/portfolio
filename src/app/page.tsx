@@ -1,12 +1,13 @@
 "use client";
 
-import { Contact, Footer, Header, Hero, Projects, Work } from "@/components";
+import { Contact, Footer, Hero, Projects, Work } from "@/components";
 import { motion } from "framer-motion";
 
 export default function Home() {
+
+  
   return (
     <div className="flex flex-col px-0 pt-8 md:px-8 lg:px-18">
-      <Header />
       <Hero />
 
       <motion.div

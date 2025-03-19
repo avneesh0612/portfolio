@@ -1,3 +1,5 @@
+import { personalData } from "./personal";
+
 export const socialLinks = [
   {
     name: "GitHub",
@@ -17,7 +19,7 @@ export const socialLinks = [
   {
     name: "Mail me",
     icon: "/icons/mail.svg",
-    link: "mailto:hi@avneesh.tech",
+    link: `mailto:${personalData.email}`,
   },
   {
     name: "LinkedIn",
