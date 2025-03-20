@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(personalData.site),
   title: personalData.name,
-  description: personalData.about,
+  description: personalData.shorterDesc,
   authors: [{ name: personalData.name }],
   keywords: personalData.keywords,
   referrer: "no-referrer-when-downgrade",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: personalData.name,
-    description: personalData.about,
+    description: personalData.shorterDesc,
     url: personalData.site,
     siteName: personalData.name,
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: personalData.name,
-    description: personalData.about,
+    description: personalData.shorterDesc,
     creator: `@${personalData.x}`,
     images: ["/about.png"],
   },

@@ -12,68 +12,72 @@ export const Hero: FC = () => {
     >
       <div className="flex flex-col px-4 md:px-0">
         <RoughNotationGroup show>
-          <p className="text-lg md:text-xl lg:text-2xl font-light leading-relaxed text-neutral-900 dark:text-neutral-100 md:flex-2/3">
-            Hey, I&apos;m{" "}
-            <RoughNotation
-              type="highlight"
-              color="var(--accent-first)"
-              order="1"
-              multiline
-            >
-              {personalData.name}
-            </RoughNotation>
-            — a high school student and developer based in India, passionate
-            about building powerful dev tools, contributing to open source, and
-            sharing my learnings through writing. Currently, I&apos;m the{" "}
-            <RoughNotation
-              type="underline"
-              color="var(--accent-second)"
-              order="2"
-              multiline
-            >
-              CTO at Orcas
-            </RoughNotation>
-            , where we&apos;re reshaping equity crowdfunding for startups.
-            I&apos;ve worked across multiple startups as a{" "}
-            <RoughNotation
-              type="highlight"
-              color="var(--primary)"
-              order="3"
-              multiline
-            >
-              developer relations engineer, full-stack developer, and technical
-              writer
-            </RoughNotation>
-            , helping teams build, scale, and engage with developer communities.
-            When I&apos;m not coding, you&apos;ll find me experimenting with
-            side projects, writing articles, or diving into something completely
-            random—just for the fun of it. Oh, and I&apos;m also a sports
-            enthusiast{" "}
-            <RoughNotation
-              type="bracket"
-              color="var(--accent-third)"
-              order="5"
-              brackets={["left", "right"]}
-              multiline
-            >
-              fitness freak + nerd :p.
-            </RoughNotation>{" "}
-            Got a startup that needs someone like me?{" "}
-            <RoughNotation
-              type="underline"
-              color="var(--primary)"
-              order="6"
-              iterations={6}
-              multiline
-            >
-              <a
-                href={`mailto:${personalData.email}`}
-                className="text-primary hover:text-primary-hover dark:text-primary/90 dark:hover:text-primary-hover/90"
+          <div>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-100">
+              Hey, I&apos;m{" "}
+              <RoughNotation
+                type="highlight"
+                color="var(--accent-first)"
+                order="1"
+                multiline
               >
-                Let&apos;s talk!
-              </a>
-            </RoughNotation>
-          </p>
+                {personalData.name}
+              </RoughNotation>
+            </h1>
+            <p className="text-lg md:text-xl lg:text-2xl font-light leading-relaxed text-neutral-900 dark:text-neutral-100 md:flex-2/3">
+              — a high school student and developer based in India, passionate
+              about building powerful dev tools, contributing to open source,
+              and sharing my learnings through writing. Currently, I&apos;m the{" "}
+              <RoughNotation
+                type="underline"
+                color="var(--accent-second)"
+                order="2"
+                multiline
+              >
+                CTO at Orcas
+              </RoughNotation>
+              , where we&apos;re reshaping equity crowdfunding for startups.
+              I&apos;ve worked across multiple startups as a{" "}
+              <RoughNotation
+                type="highlight"
+                color="var(--primary)"
+                order="3"
+                multiline
+              >
+                developer relations engineer, full-stack developer, and
+                technical writer
+              </RoughNotation>
+              , helping teams build, scale, and engage with developer
+              communities. When I&apos;m not coding, you&apos;ll find me
+              experimenting with side projects, writing articles, or diving into
+              something completely random—just for the fun of it. Oh, and
+              I&apos;m also a sports enthusiast{" "}
+              <RoughNotation
+                type="bracket"
+                color="var(--accent-third)"
+                order="5"
+                brackets={["left", "right"]}
+                multiline
+              >
+                fitness freak + nerd :p.
+              </RoughNotation>{" "}
+              Got a startup that needs someone like me?{" "}
+              <RoughNotation
+                type="underline"
+                color="var(--primary)"
+                order="6"
+                iterations={6}
+                multiline
+              >
+                <a
+                  href={`mailto:${personalData.email}`}
+                  className="text-primary hover:text-primary-hover dark:text-primary/90 dark:hover:text-primary-hover/90"
+                >
+                  Let&apos;s talk!
+                </a>
+              </RoughNotation>
+            </p>
+          </div>
         </RoughNotationGroup>
 
         <div className="mt-8 flex items-center gap-4">
