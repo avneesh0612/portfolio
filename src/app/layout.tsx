@@ -1,8 +1,8 @@
+import { Footer, Header } from "@/components";
+import { ThemeProvider } from "@/components/theme-provider";
+import { personalData } from "@/data";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { personalData } from "@/data";
-import { Header } from "@/components";
-import { ThemeProvider } from "@/components/theme-provider";
 
 export const viewport: Viewport = {
   themeColor: "#0A0A0A",
@@ -75,6 +75,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

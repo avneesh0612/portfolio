@@ -6,15 +6,13 @@ export const Footer: FC = () => {
 
   return (
     <footer
-      className="w-full py-6 bg-background-light dark:bg-background-dark text-neutral-900 dark:text-neutral-100 text-center"
+      className="w-full bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 text-center shadow-sm mx-auto"
       role="contentinfo"
       aria-label="Site footer"
     >
-      <div className="max-w-4xl mx-auto space-y-4">
-        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          © {currentYear} {personalData.name}. All rights reserved.
-        </p>
-      </div>
+      <p className="text-neutral-600 dark:text-neutral-400 text-sm py-4">
+        © {currentYear} {personalData.name}. All rights reserved.
+      </p>
     </footer>
   );
 };

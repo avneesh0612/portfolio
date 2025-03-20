@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Avneesh Agarwal</title>
-        <link>https://www.avneesh.tech/</link>
+        <link>https://avneesh.tech/</link>
         <description>Hey, I'm Avneesh Agarwal — a developer based in India, passionate about
             building powerful dev tools, contributing to open source, and sharing my learnings
             through writing. Currently, I'm the CTO at Orcas, where we're reshaping equity
@@ -11,14 +11,14 @@
             engage with developer communities. When I'm not coding, you'll find me experimenting
             with side projects, writing articles, or diving into something completely random—just
             for the fun of it. Oh, and I'm also a sports enthusiast (fitness freak + nerd combo :p).</description>
-        <lastBuildDate>Wed, 19 Mar 2025 12:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thurs, 20 Mar 2025 12:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <image>
             <title>Avneesh Agarwal</title>
-            <url>https://www.avneesh.tech/about.png</url>
-            <link>https://www.avneesh.tech/</link>
+            <url>https://avneesh.tech/about.png</url>
+            <link>https://avneesh.tech/</link>
         </image>
         <copyright>All rights reserved, Avneesh Agarwal</copyright>
         <category>Technology</category>

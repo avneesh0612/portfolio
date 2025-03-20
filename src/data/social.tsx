@@ -31,6 +31,6 @@ export const socialLinks = [
   {
     name: "LinkedIn",
     Icon: LinkedInIcon,
-    link: "https://www.linkedin.com/in/avneesh0612",
+    link: "https://www.linkedin.com/in/avneesh0612/",
   },
 ];
