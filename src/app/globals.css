@@ -2,8 +2,20 @@
 @config "../../tailwind.config.ts";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: theme("colors.background.light");
+  --foreground: theme("colors.foreground.light");
+  --icon-color: theme("colors.neutral.900");
+  --primary: theme("colors.primary.DEFAULT");
+  --primary-hover: theme("colors.primary.hover");
+  --accent-first: theme("colors.accent.first");
+  --accent-second: theme("colors.accent.second");
+  --accent-third: theme("colors.accent.third");
+}
+
+:root.dark {
+  --background: theme("colors.background.dark");
+  --foreground: theme("colors.foreground.dark");
+  --icon-color: theme("colors.neutral.100");
 }
 
 @theme inline {
@@ -16,6 +28,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @font-face {

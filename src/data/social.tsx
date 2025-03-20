@@ -1,29 +1,36 @@
+import {
+  FarcasterIcon,
+  GithubIcon,
+  LinkedInIcon,
+  MailIcon,
+  XIcon,
+} from "@/components/Icons";
 import { personalData } from "./personal";
 
 export const socialLinks = [
   {
     name: "GitHub",
-    icon: "/icons/github.svg",
+    Icon: GithubIcon,
     link: "https://github.com/avneesh0612",
   },
   {
     name: "X",
-    icon: "/icons/x.svg",
+    Icon: XIcon,
     link: "https://x.com/avneesh0612",
   },
   {
     name: "Farcaster",
-    icon: "/icons/farcaster.svg",
-    link: "https://warpcast.com/aneesh0612",
+    Icon: FarcasterIcon,
+    link: "https://warpcast.com/avneesh",
   },
   {
     name: "Mail me",
-    icon: "/icons/mail.svg",
+    Icon: MailIcon,
     link: `mailto:${personalData.email}`,
   },
   {
     name: "LinkedIn",
-    icon: "/icons/linkedin.svg",
+    Icon: LinkedInIcon,
     link: "https://www.linkedin.com/in/avneesh0612",
   },
 ];

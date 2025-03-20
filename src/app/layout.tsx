@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { personalData } from "@/data";
 import { Header } from "@/components";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const viewport: Viewport = {
   themeColor: "#0A0A0A",
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
     images: ["/about.png"],
   },
   icons: {
-    icon: "/logo.svg",
+    icon: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
   robots: {
@@ -69,10 +70,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="antialiased font-geomanist">
-        <Header />
-        {children}
+        <ThemeProvider>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
