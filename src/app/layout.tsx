@@ -10,7 +10,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(personalData.site),
-  title: personalData.name,
+  title: `${personalData.name} | ${personalData.designation}`,
   description: personalData.shorterDesc,
   authors: [{ name: personalData.name }],
   keywords: personalData.keywords,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: personalData.name,
+    title: `${personalData.name} | ${personalData.designation}`,
     description: personalData.shorterDesc,
     url: personalData.site,
     siteName: personalData.name,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: personalData.name,
+    title: `${personalData.name} | ${personalData.designation}`,
     description: personalData.shorterDesc,
     creator: `@${personalData.x}`,
     images: ["/about.png"],
