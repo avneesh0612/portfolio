@@ -6,13 +6,19 @@ import "./globals.css";
 
 export const viewport: Viewport = {
   themeColor: "#0A0A0A",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(personalData.site),
-  title: `${personalData.name} | ${personalData.designation}`,
-  description: personalData.shorterDesc,
-  authors: [{ name: personalData.name }],
+  title: {
+    template: `%s | ${personalData.name}`,
+    default: `${personalData.name} | ${personalData.designation}`,
+  },
+  description: personalData.metaDescription,
+  authors: [{ name: personalData.name, url: personalData.site }],
   keywords: personalData.keywords,
   referrer: "no-referrer-when-downgrade",
   alternates: {
@@ -23,15 +29,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `${personalData.name} | ${personalData.designation}`,
-    description: personalData.shorterDesc,
+    description: personalData.metaDescription,
     url: personalData.site,
     siteName: personalData.name,
     images: [
       {
         url: "/about.png",
-        width: 800,
-        height: 420,
-        alt: personalData.name,
+        width: 1200,
+        height: 630,
+        alt: `${personalData.name} - ${personalData.designation}`,
       },
     ],
     type: "website",
@@ -40,12 +46,14 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${personalData.name} | ${personalData.designation}`,
-    description: personalData.shorterDesc,
+    description: personalData.metaDescription,
     creator: `@${personalData.x}`,
     images: ["/about.png"],
   },
   icons: {
     icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
   robots: {

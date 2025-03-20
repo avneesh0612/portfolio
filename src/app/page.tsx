@@ -12,7 +12,7 @@ const jsonLd: WithContext<WebSite> = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: personalData.name,
-  url: "${personalData.site}/",
+  url: personalData.site,
   description: personalData.shorterDesc,
   image: `${personalData.site}/about.png`,
   author: {
